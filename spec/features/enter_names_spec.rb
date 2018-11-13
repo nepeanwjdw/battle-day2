@@ -1,5 +1,5 @@
-describe "Enter name when starting game", type: :feature do
-  it "Both players can enter names and see them displayed" do
+feature "Enter name when starting game" do
+  scenario "Both players can enter names and see them displayed" do
     visit "/"
     player1 = "Stuart"
     player2 = "Will"
