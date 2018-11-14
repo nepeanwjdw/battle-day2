@@ -1,13 +1,6 @@
 feature "Enter name when starting game" do
   scenario "Both players can enter names and see them displayed" do
-    visit "/"
-    player1 = "Stuart"
-    player2 = "Will"
-
-    fill_in "player_1_name", :with => player1
-    fill_in "player_2_name", :with => player2
-    click_button "Enter names"
-
-    expect(page).to have_text("#{player1} vs #{player2}")
+    sign_in_and_play()
+    expect(page).to have_text("Will vs Joe")
   end
 end
