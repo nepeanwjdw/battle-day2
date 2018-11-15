@@ -16,9 +16,9 @@ describe Player do
     end
   end
 
-  describe '#attack' do
+  describe '#take_damage' do
     it 'shoud reduce the hitpoints by 10' do
-      will.attack(joe)
+      joe.take_damage
       expect(joe.hitpoints).to eq Player::DEFAULT_HITPOINTS-10
     end
   end
