@@ -20,7 +20,7 @@ class Battle < Sinatra::Base
   end
 
   get '/attack' do
-    $game.attack($game.p2)
+    $game.attack($game.not_whose_turn)
     erb :attack
   end
   # start the server if ruby file executed directly

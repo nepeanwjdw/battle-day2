@@ -5,9 +5,17 @@
 
 <body>
   <div>
-  <%= $game.p1.name %> attacked <%= $game.p2.name %>
+    <br>
+    <%= $game.p1.name %> attacked <%= $game.p2.name %>
   </div>
   <div>
+    <br>
     <%= $game.p2.name %>: <%= $game.p2.hitpoints %>HP
+  </div>
+  <div>
+    <br>
+    <form class="" action="/play" method="get">
+      <input type="submit" name="" value="End Turn">
+    </form>
   </div>
 </body>

@@ -19,4 +19,8 @@ class Game
     @p1turn ? @p1 : @p2
   end
 
+  def not_whose_turn
+    @p1turn ? @p2 : @p1
+  end
+
 end

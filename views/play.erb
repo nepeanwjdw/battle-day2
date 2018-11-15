@@ -5,14 +5,21 @@
 
 <body>
   <div class="">
-    <p><%= $game.p1.name %> vs <%= $game.p2.name %></p>
+    <br>
+    It's <%= $game.whose_turn.name %>'s turn
   </div>
   <div class="">
-    <p><%= $game.p2.name %>: <%= $game.p2.hitpoints %></p>
+    <br>
+    <%= $game.p1.name %> vs <%= $game.p2.name %>
+  </div>
+  <div class="">
+    <br>
+    <%= $game.not_whose_turn.name %>: <%= $game.not_whose_turn.hitpoints %>HP
   </div>
   <div>
+    <br>
     <form action="/attack">
-      <input type="submit" value="Attack">
+      <input type="submit" value="Attack <%= $game.not_whose_turn.name %>">
     </form>
   </div>
 
