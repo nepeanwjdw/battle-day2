@@ -5,10 +5,10 @@
 
 <body>
   <div class="">
-    <p><%= @player_1_name %> vs <%= @player_2_name %></p>
+    <p><%= $game.p1.name %> vs <%= $game.p2.name %></p>
   </div>
   <div class="">
-    <p><%= @player_2_name %>: 100HP</p>
+    <p><%= $game.p2.name %>: <%= $game.p2.hitpoints %></p>
   </div>
   <div>
     <form action="/attack">
