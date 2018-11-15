@@ -12,14 +12,14 @@ describe Player do
 
   describe '#hitpoints' do
     it 'should show the default hitpoints' do
-      expect(will.hitpoints).to eq 100
+      expect(will.hitpoints).to eq Player::DEFAULT_HITPOINTS
     end
   end
 
   describe '#attack' do
     it 'shoud reduce the hitpoints by 10' do
       will.attack(joe)
-      expect(joe.hitpoints).to eq 90
+      expect(joe.hitpoints).to eq Player::DEFAULT_HITPOINTS-10
     end
   end
 
